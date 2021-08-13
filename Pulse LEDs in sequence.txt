@@ -22,6 +22,7 @@ pinMode (red, OUTPUT);
 
 void loop(){
 
+digitalWrite (red, LOW);
 digitalWrite (green, HIGH);
 delay (time);
 
