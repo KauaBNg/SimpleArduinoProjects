@@ -1,0 +1,45 @@
+//Made by Kauã B. Nogueira.
+
+int green = 2;
+int yellow = 3;
+int red = 4;
+int time = 800; //in miliseconds
+
+//go to tinkercad, search for arduino and grab it. Then grab 3 LEDs and change his colors to green, yellow and red. Connect the green LED in digital 2, yellow in digital 3, red in digital 4. 
+//Place a 220 ohms resistor and connect all the leds in Terminal 1 and connect the resistor's Terminal 2 in Arduino GND. Open code page, chaange to text and place the code. 
+//Start simulation.
+
+void setup(){
+
+pinMode (green, OUTPUT);
+pinMode (yellow, OUTPUT);
+pinMode (red, OUTPUT);
+
+//Define all connected pins to Output.
+
+}
+
+void loop(){
+
+digitalWrite (green, HIGH);
+digitalWrite (yellow, LOW);
+digitalWrite (red, LOW);
+delay (time);
+
+//Only the green LED will turn on. After this, will wait 800ms and turn off.
+
+digitalWrite (green, LOW);
+digitalWrite (yellow, HIGH);
+digitalWrite (red, LOW);
+delay (time);
+
+//Only the yellow LED will turn on. After this, will wait 800ms and turn off.
+
+digitalWrite (green, LOW);
+digitalWrite (yellow, LOW);
+digitalWrite (red, HIGH);
+delay (time);
+
+//Only the red LED will turn on. After this, will wait 800ms, turn off and start a loop.
+
+}
